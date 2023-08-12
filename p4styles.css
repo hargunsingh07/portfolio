@@ -1,0 +1,342 @@
+/********w************
+    
+    Project 4 
+    Name: Hargun Singh
+    Date: 2023-06-16
+    Description: Project 1
+
+*********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    background-color: #0A192F;
+    line-height: 2;
+    height: 100vh;
+    flex-direction: column;
+    
+}
+
+
+#header{
+    background-color: #030a15;
+    height: 80px;
+    width: 100%;
+    
+}  
+
+#header #namelogo{
+    position: absolute;
+    left:-0.5%;
+    top: -0.8%;
+    width: 100px;
+}
+#ul1 {
+    position: absolute;
+    top: 0.8%;
+    padding-left: 35%;
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+#ul1 li a {
+    margin: 30px;
+    color:#307B7A;
+    font-weight: bolder;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Nanum Gothic Coding', monospace;
+    border-bottom: 4px solid transparent;
+    transition: all 0.3s ease; 
+}
+#ul1 li a:hover {
+  border-bottom-color: rgb(22, 160, 133);
+  font-size: 26px;
+}
+
+#header h2{
+    position:absolute;
+    left:84.5%;
+    top: 0.8%;
+    color: #307B7A;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+
+#main {
+    color:#3fb0ae;
+    position: absolute;
+    top:35%;
+    left: 15%;
+    font-size: 40px;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+#main h1{
+    color: #C4D1EC;
+}
+#main h2{
+    font-size: 50px;
+}
+#paragraph{
+    position:absolute;
+    top: -15px;
+    font-size:32px;
+}
+#main_p{
+    width:40% ;
+    font-size:25px;
+    color:#C4D1EC ;
+}
+
+#sidemain{
+    color:#307B7A;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+}
+#sidemain img{
+  width: 800px;
+  mix-blend-mode:lighten;
+}
+#footer {
+    margin-bottom: 2%;
+    margin-left: 45%;
+    
+}
+#footer ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+#footer ul li {
+    margin: 10px;
+}
+
+#footer2{
+    position: absolute;
+    left: 40%;
+    top: 90%;
+    
+}
+
+#footer p{
+    color:black;
+    margin-left: 70px;
+    font-weight: bolder;
+
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        line-height: 1.5;
+    }
+
+    #ul1 {
+        padding-left: 0;
+        top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    #header h2{
+        display:none;
+    }
+
+    #ul1 li a {
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    #main {
+        top: 20%;
+        left: 5%;
+        font-size: 28px;
+    }
+
+    #paragraph {
+        top: -10px;
+        font-size: 24px;
+    }
+
+    #sidemain {
+        font-size: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity:0.4;
+    }
+
+    #footer ul {
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: 10px;
+    }
+}
+/****  about css ******/
+
+#body2 {
+    background-image: url("images/backcoding1.png");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    
+
+}
+
+#box1 {
+    background-color: rgba(24, 21, 21, 0.893); 
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width:1500px;
+    border-radius: 10px;
+    margin-top:15px;
+
+
+}
+
+#container2{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+#content{
+    font-size: 25px;
+    font-weight:bold ;
+    color: rgba(252, 240, 255, 0.744);
+}
+#content hr {
+    border: 3px solid black;
+
+}
+
+/**** skills css *****/
+
+#ulist {
+    padding-left: 100px;
+    text-align: left;
+    
+}
+
+#ulist2 {
+    padding-left: 100px;
+    text-align: left;
+   
+}
+
+/****** contact css *****/
+
+#box2{
+    background-color: rgba(24, 21, 21, 0.893); 
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width:800px;
+    border-radius: 10px;
+    margin-top:2%;
+
+}
+
+
+#box2 form:focus{
+    outline: none;
+}
+
+#legend {
+    margin-bottom: 10%;
+    
+}
+
+#ulist3{
+    padding-left: 100px;
+    text-align: left;
+    list-style-type: none
+}
+#ulist3 li{
+    margin-bottom: 5%;
+}
+
+#name-label{
+    margin-right:20%;
+    
+}
+#contact-label{
+    margin-right: 10%;
+    
+}
+#email-label{
+    margin-right: 17.5%;
+}
+#comments-label{
+    margin-right: 11%;
+}
+input[type="text"],input[type="number"],
+input[type="email"] {
+    width: 50%; 
+    height: 40px; 
+    padding: 8px; 
+    font-size: 16px; 
+    border-radius: 6px;
+}
+
+#comments{
+    width: 50%; 
+    height: 40px; 
+    padding: 8px; 
+    font-size: 16px; 
+    border-radius: 6px;
+
+}
+
+button {
+    margin-top: 2%;
+}
+
+#submit {
+    width: 150px;
+    height: 40px;
+    background-color: #3fb0ae;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10%;
+}
+
+#reset{
+    width: 150px;
+    height: 40px;
+    background-color: #3fb0ae;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer; 
+}
+
+#footer1{
+    position: absolute;
+    bottom: 0.5%;
+    left: 40%;
+}
+
+.Errors {
+    color: red;
+    
+}
+
+fieldset {
+   border: none;
+}
